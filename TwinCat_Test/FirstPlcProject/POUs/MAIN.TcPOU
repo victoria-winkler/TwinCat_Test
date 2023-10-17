@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{c32b958a-3105-41d9-9190-232c80de93b2}" SpecialFunc="None">
+    <Declaration><![CDATA[// Deklarationsbereich
+
+PROGRAM MAIN
+VAR
+	bIn1, bIn2, bOut : BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Anweisungsbereich
+
+bOut := bIn1 AND bIn2;		//Logisches AND
+
+(*
+Comment for multiple lines
+*)]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="11" Count="1" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
